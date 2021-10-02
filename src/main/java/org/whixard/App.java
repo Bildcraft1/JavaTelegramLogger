@@ -23,13 +23,8 @@ import java.util.Scanner;
 public final class App {
     public static void main(String[] args) throws CantLoadLibrary, InterruptedException {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter chatID of the chat you want to log: ");
-        long chatID = sc.nextLong();
-
-        System.out.println("Enter chatID of the log chat: ");
-        long logID = sc.nextLong();
-        sc.close();
+        long chatID = Long.parseLong(args[0]);
+        long logID = Long.parseLong(args[1]);
 
         // Initialize TDLight native libraries
         Init.start();
