@@ -42,6 +42,16 @@
       <artifactId>tdlight-natives-osx-amd64</artifactId>
       <version>3.3.154</version>
     </dependency>
+    <dependency>
+      <groupId>it.tdlight</groupId>
+      <artifactId>tdlight-natives-linux-amd64</artifactId>
+      <version>3.3.154</version>
+    </dependency>    
+    <dependency>
+      <groupId>it.tdlight</groupId>
+      <artifactId>tdlight-natives-windows-amd64</artifactId>
+      <version>3.3.154</version>
+    </dependency>    
     <!-- log4j logging -->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
