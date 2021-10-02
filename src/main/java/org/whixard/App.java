@@ -80,7 +80,8 @@ public final class App {
                 // Get the chat response
                 Chat chat = chatIdResult.get();
                 var sender = update.message.sender;
-                if (sender instanceof MessageSenderUser senderUser) {
+                if (sender instanceof MessageSenderUser) { 
+                    var senderUser = (MessageSenderUser) sender;
                     client.send(new TdApi.GetUser(senderUser.userId), (Result<TdApi.User> userName) -> {
                         String chatName = chat.title;
                         String profileName = userName.get().username;
